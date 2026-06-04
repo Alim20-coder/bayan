@@ -1452,6 +1452,8 @@
             <button class="filter-btn" data-filter="hidden">دكت مخفي</button>
             <button class="filter-btn" data-filter="central">مركزي</button>
             <button class="filter-btn" data-filter="hood">هود استيل</button>
+            <button class="filter-btn" data-filter="exhaust">شفط وتهوية</button>
+
         </div>
         <div class="portfolio-grid" id="portfolioGrid"></div>
     </div>
@@ -1988,11 +1990,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // === PORTFOLIO ===
     const grid = document.getElementById('portfolioGrid');
     const categories = [
-        { id:'desert', start:1,  end:8, name:'دكت صحراوي' },
-        { id:'hidden', start:9,  end:16, name:'دكت مخفي'   },
-        { id:'central',start:17, end:22, name:'مركزي'      },
-        { id:'hood',   start:23, end:28, name:'هود استيل'  },
-        { id:'exhaust',start:29, end:34, name:'شفط وتهوية' }
+        { id:'desert', start:1,  end:9, name:'دكت صحراوي' },
+        { id:'hidden', start:10,  end:34, name:'دكت مخفي'   },
+        { id:'central',start:35, end:42, name:'مركزي'      },
+        { id:'hood',   start:43, end:51, name:'هود استيل'  },
+        { id:'exhaust',start:52, end:62, name:'شفط وتهوية' }
     ];
 
     const catNames = {
