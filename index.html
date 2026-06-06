@@ -352,128 +352,6 @@
         .room-temp { color: var(--accent); font-weight: 900; font-family: monospace; font-size: 1rem; }
         .room-status { width: 8px; height: 8px; border-radius: 50%; background: #00e676; box-shadow: 0 0 6px #00e676; }
 
-        /* CATALOG SECTION */
-        .catalog-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        .catalog-section::before {
-            content: '';
-            position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(100,255,218,0.08) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-        .catalog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 22px;
-        }
-        .catalog-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(10,25,47,0.08);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            border: 1px solid #e8f0f8;
-        }
-        .catalog-card:hover { transform: translateY(-12px); box-shadow: 0 25px 60px rgba(10,25,47,0.18); border-color: var(--accent); }
-        .catalog-card-header {
-            background: var(--gradient);
-            padding: 30px 25px 20px;
-            position: relative;
-            overflow: hidden;
-        }
-        .catalog-card-header::before {
-            content: '';
-            position: absolute;
-            top: -30px;
-            right: -30px;
-            width: 100px;
-            height: 100px;
-            background: rgba(100,255,218,0.1);
-            border-radius: 50%;
-        }
-        .catalog-card-header::after {
-            content: '';
-            position: absolute;
-            bottom: -20px;
-            left: -20px;
-            width: 80px;
-            height: 80px;
-            background: rgba(100,255,218,0.05);
-            border-radius: 50%;
-        }
-        .catalog-icon-big {
-            width: 60px;
-            height: 60px;
-            background: rgba(100,255,218,0.15);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            color: var(--accent);
-            margin-bottom: 15px;
-            position: relative;
-            z-index: 1;
-        }
-        .catalog-card-header h5 {
-            color: white;
-            font-weight: 900;
-            font-size: 1rem;
-            margin: 0;
-            position: relative;
-            z-index: 1;
-        }
-        .catalog-card-header p {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.8rem;
-            margin: 5px 0 0;
-            position: relative;
-            z-index: 1;
-        }
-        .catalog-card-body { padding: 20px 25px; }
-        .catalog-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 15px; }
-        .catalog-tag { background: var(--light-bg); color: var(--secondary); padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; border: 1px solid #e0eaf4; }
-        .catalog-download-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            background: var(--gradient);
-            color: var(--accent);
-            padding: 12px 20px;
-            border-radius: 12px;
-            font-weight: 800;
-            font-size: 0.9rem;
-            transition: var(--transition);
-            border: none;
-            width: 100%;
-            text-decoration: none;
-        }
-        .catalog-download-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(10,25,47,0.25); color: white; }
-        .catalog-download-btn i { font-size: 1.1rem; }
-        .catalog-pdf-badge {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            background: rgba(255,80,80,0.9);
-            color: white;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 900;
-            letter-spacing: 1px;
-        }
-        .catalog-pages { color: #888; font-size: 0.8rem; display: flex; align-items: center; gap: 5px; margin-bottom: 12px; }
-
         /* COOLING TECH SECTION */
         .tech-section {
             padding: 80px 0;
@@ -658,7 +536,6 @@
             .portfolio-thumb { height: 220px; }
             .contact-form-card { padding: 20px; }
             .stat-box .num { font-size: 2.2rem; }
-            .catalog-grid { grid-template-columns: 1fr; }
             .monitor-grid { grid-template-columns: 1fr 1fr; }
             .calc-inputs { grid-template-columns: 1fr; }
         }
@@ -709,7 +586,6 @@
                 <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">الأعمال</a></li>
-                <li class="nav-item"><a class="nav-link" href="#catalogs">الكتالوجات</a></li>
                 <li class="nav-item"><a class="nav-link" href="#articles">المقالات</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">تواصل</a></li>
                 <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
@@ -1211,528 +1087,6 @@
     </div>
 </section>
 
-<!-- ===== NEW SECTION 4: CATALOG PDF ===== -->
-<section class="catalog-section" id="catalogs">
-    <div class="container position-relative" style="z-index:2;">
-        <div class="section-title reveal">
-            <h2>كتالوجاتنا التقنية</h2>
-            <p>تصفح وحمّل كتالوجات الأنظمة والمنتجات التي نعتمدها في مشاريعنا</p>
-        </div>
-        <div class="catalog-grid reveal" id="catalogGrid">
-
-            <!-- Catalog 1 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج صلد</h5>
-                    <p>مواصفات ومقاسات الأنابيب</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">أنظمة الدكت</span><span class="catalog-tag">مواصفات فنية</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج صلد.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 2 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج روعة</h5>
-                    <p>مواصفات وحدات الهواء</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">تكييف مركزي</span><span class="catalog-tag">AHU</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج روعة.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 3 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج داخلي</h5>
-                    <p>الوحدات الداخلية للسبليت</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">سبليت مخفي</span><span class="catalog-tag">دكت مخفي</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج داخلي.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 4 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج سانتكس</h5>
-                    <p>منظومة معالجة الهواء</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">فلاتر هواء</span><span class="catalog-tag">معالجة هواء</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج سانتكس.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 5 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج جاز تانك كوتنج</h5>
-                    <p>مواد العزل وحماية الخزانات</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">عزل حراري</span><span class="catalog-tag">طلاء حماية</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج جاز تانك كوتنج.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 6 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج جازتيل</h5>
-                    <p>منتجات العزل الصناعي</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">عزل صناعي</span><span class="catalog-tag">أنظمة حرارية</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج جازتيل.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 7 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج جرين سلك فلكسي</h5>
-                    <p>الأنابيب المرنة المعزولة</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">دكت مرن</span><span class="catalog-tag">توزيع هواء</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج جرين سلك فلكسي.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 8 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج تايبلكس</h5>
-                    <p>ألواح العزل الحراري المركب</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">ألواح عزل</span><span class="catalog-tag">أوندورا</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج تايبلكس.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 9 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج تورمالين فلورنج</h5>
-                    <p>أرضيات خاصة للمناطق الباردة</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">أرضيات</span><span class="catalog-tag">عزل قواعد</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج تورمالين فلورنج.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 10 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج ثري دي فلورنج</h5>
-                    <p>عزل الأرضيات ثلاثي الأبعاد</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">عزل حديث</span><span class="catalog-tag">3D Flooring</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج ثري دي فلورنج.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 11 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج بروفكس</h5>
-                    <p>مواصفات أنظمة التوزيع</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">توزيع هواء</span><span class="catalog-tag">مشبكات</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج بروفكس.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 12 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج فاست درايف إتنامل</h5>
-                    <p>محركات متغيرة السرعة VFD</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">VFD</span><span class="catalog-tag">محركات مراوح</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج فاست درايف إتنامل.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 13 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج فلكسي جارد</h5>
-                    <p>الغلاف الواقي للدكت المرن</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">حماية دكت</span><span class="catalog-tag">فلكسي</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج فلكسي جارد (1).pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 14 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج كلير فارنيش</h5>
-                    <p>طلاء شفاف مقاوم للحرارة</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">طلاء حماية</span><span class="catalog-tag">مقاومة حرارة</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج كلير فارنيش.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 15 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج كول رووف</h5>
-                    <p>مواد تبريد الأسطح</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">تبريد أسطح</span><span class="catalog-tag">عزل سطح</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج كول رووف.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 16 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج كونكريت إفكت</h5>
-                    <p>طلاء تأثير الخرسانة للمشاريع</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">طلاء</span><span class="catalog-tag">حماية هياكل</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج كونكريت إفكت.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 17 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج لاينتكس</h5>
-                    <p>أنابيب بولي إيثيلين عازلة</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">أنابيب PE</span><span class="catalog-tag">عزل حراري</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج لاينتكس.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 18 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج مارمو</h5>
-                    <p>ألواح ديكورية عازلة</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">عزل ديكوري</span><span class="catalog-tag">ألواح</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج مارمو.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 19 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج مجموعة ألوان الخارجي (1)</h5>
-                    <p>تشكيلة الألوان الخارجية</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">ألوان</span><span class="catalog-tag">واجهات خارجية</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج مجموعة ألوان الخارجي (1).pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 20 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج مجموعة ألوان الخارجي (2)</h5>
-                    <p>تشكيلة الألوان الخارجية المتقدمة</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">ألوان</span><span class="catalog-tag">واجهات</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج مجموعة ألوان الخارجي (2).pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 21 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج مجموعة ألوان الخارجي (3)</h5>
-                    <p>المجموعة الثالثة من الألوان</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">ألوان خارجية</span><span class="catalog-tag">تشطيبات</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج مجموعة ألوان الخارجي.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 22 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج مشاشكو</h5>
-                    <p>وصلات ومحابس التكييف</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">وصلات</span><span class="catalog-tag">محابس</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج مشاشكو.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 23 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج مكسيم</h5>
-                    <p>وحدات تكييف مكسيم</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">وحدات تكييف</span><span class="catalog-tag">كاسيت</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج مكسيم.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 24 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج نوفل</h5>
-                    <p>مضخات ومعدات التبريد</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">مضخات</span><span class="catalog-tag">معدات تبريد</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج نوفل (1).pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 25 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج نيوتكس</h5>
-                    <p>أنظمة التكييف الجديدة</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">تقنية جديدة</span><span class="catalog-tag">انفرتر</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج نيوتكس.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 26 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج هارموني</h5>
-                    <p>أنظمة الهارموني المركزية</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">مركزي</span><span class="catalog-tag">هارموني</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج هارموني.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 27 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج ورود</h5>
-                    <p>منتجات العزل الصوتي والحراري</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">عزل صوتي</span><span class="catalog-tag">عزل حراري</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج ورود.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 28 -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج ووڈ ستاين</h5>
-                    <p>طلاء تأثير الخشب المقاوم</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">طلاء خشب</span><span class="catalog-tag">حماية أسطح</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج وود ستاين.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 29: New -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج الجديد والأحشاب</h5>
-                    <p>منتجات العزل الطبيعي</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">عزل طبيعي</span><span class="catalog-tag">مستدام</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج الجديد والأحشاب.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-            <!-- Catalog 30: ألوان البيج -->
-            <div class="catalog-card">
-                <span class="catalog-pdf-badge">PDF</span>
-                <div class="catalog-card-header">
-                    <div class="catalog-icon-big"><i class="fas fa-file-pdf"></i></div>
-                    <h5>كتالوج ألوان البيج</h5>
-                    <p>تشكيلة الألوان البيج الكاملة</p>
-                </div>
-                <div class="catalog-card-body">
-                    <div class="catalog-tags"><span class="catalog-tag">ألوان</span><span class="catalog-tag">بيج</span></div>
-                    <div class="catalog-pages"><i class="fas fa-file-alt"></i> كتالوج تقني</div>
-                    <a href="/Css/كتالوج ألوان البيج.pdf" target="_blank" class="catalog-download-btn">
-                        <i class="fas fa-download"></i> تحميل الكتالوج
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <!-- ===== NEW SECTION 5: COOLING CALCULATOR ===== -->
 <section class="calculator-section" id="calculator">
@@ -1937,12 +1291,15 @@
 <footer>
     <div class="container">
         <div class="row g-4 mb-4">
-            <div class="col-lg-4">
+            <!-- عمود شعار المؤسسة والنبذة -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="footer-logo"><i class="fas fa-snowflake me-2"></i>البيان <span>والتبيان</span></div>
                 <p>مؤسسة البيان والتبيان للتكييف والتبريد — الرائدة في تقديم حلول التكييف المتكاملة بالرياض منذ أكثر من 15 عاماً.</p>
                 <div class="social-links mt-3"></div>
             </div>
-            <div class="col-lg-2 col-6">
+            
+            <!-- عمود الخدمات -->
+            <div class="col-xl-2 col-lg-2 col-6">
                 <div class="footer-heading">خدماتنا</div>
                 <ul class="footer-links">
                     <li><a href="#services">دكت صحراوي</a></li>
@@ -1952,27 +1309,38 @@
                     <li><a href="#services">أنظمة شفط</a></li>
                 </ul>
             </div>
-            <div class="col-lg-2 col-6">
+            
+            <!-- عمود الروابط السريعة -->
+            <div class="col-xl-2 col-lg-2 col-6">
                 <div class="footer-heading">روابط</div>
                 <ul class="footer-links">
                     <li><a href="#home">الرئيسية</a></li>
                     <li><a href="#about">من نحن</a></li>
                     <li><a href="#portfolio">الأعمال</a></li>
-                    <li><a href="#catalogs">الكتالوجات</a></li>
                     <li><a href="#calculator">حاسبة التكييف</a></li>
                     <li><a href="#contact">تواصل معنا</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4">
+            
+            <!-- عمود بيانات التواصل -->
+            <div class="col-xl-2 col-lg-4 col-md-6">
                 <div class="footer-heading">تواصل معنا</div>
                 <div class="d-flex flex-column gap-3">
                     <a href="tel:0568402006" style="color:rgba(255,255,255,0.7); font-size:0.9rem;"><i class="fas fa-phone me-2" style="color:var(--accent);"></i>0568402006</a>
                     <a href="https://wa.me/966533585879" style="color:rgba(255,255,255,0.7); font-size:0.9rem;"><i class="fab fa-whatsapp me-2" style="color:var(--accent);"></i>966533585879+</a>
                     <span style="color:rgba(255,255,255,0.6); font-size:0.9rem;"><i class="fas fa-map-marker-alt me-2" style="color:var(--accent);"></i>الرياض — المنطقة الصناعية الأولى</span>
-               <a href="mailto:albyanwaltibyan@outlook.sa" style="color:rgba(255,255,255,0.7); font-size:0.9rem;"><i class="fas fa-envelope me-2" style="color:var(--accent);"></i>albyanwaltibyan@outlook.sa</a>
+                    <a href="mailto:albyanwaltibyan@outlook.sa" style="color:rgba(255,255,255,0.7); font-size:0.9rem;"><i class="fas fa-envelope me-2" style="color:var(--accent);"></i>albyanwaltibyan@outlook.sa</a>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-12 col-md-6">
+                <div class="footer-heading">موقعنا على الخريطة</div>
+                <div class="ratio ratio-4x3 overflow-hidden rounded" style="border: 1px solid rgba(255,255,255,0.1); max-height: 200px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.742633373686!2d46.7428896!3d24.632553799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0534b8cfd63f%3A0x7dd7e5ef66413c46!2z2KfZhNi32KfYptixINmE2YTZح9iv2LHZiNmE2YrZgyDYp9mE2LXZhtin2LnZitipINin2YTZgtiv2YrZhdipINmI2LHYtNmHINiv2LHZg9iz2YrZiNmGINmH2K_YsdmI2YTZitmDINin2LXZhNin2K0g2K_ZiNiv2Kkg2K_YsdmD2LPZitmI2YYg2YPZh9ix2KjYp9ihINmI2LLZitiq!5e0!3m2!1sar!2seg!4v1780764102688!5m2!1sar!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
+        
         <hr class="footer-divider">
         <p style="opacity:0.4; font-size:0.8rem;" class="mb-0">
             &copy; 2026 مؤسسة البيان والتبيان — جميع الحقوق محفوظة
